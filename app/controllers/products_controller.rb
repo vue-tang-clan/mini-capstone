@@ -13,4 +13,10 @@ class ProductsController < ApplicationController
     @product = Product.find_by(id: 6)
     render "one_product.json.jbuilder"
   end
+
+  def one_product_method
+    product_id = params["id"]
+    @product = Product.find_by(id: product_id)
+    render "one_product.json.jbuilder"
+  end
 end
