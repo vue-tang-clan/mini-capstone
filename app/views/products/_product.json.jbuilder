@@ -7,3 +7,4 @@ json.discounted product.discounted?
 json.tax product.tax
 json.total product.total
 json.message "YO"
+json.supplier_name product.supplier.name
