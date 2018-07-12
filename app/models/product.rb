@@ -38,4 +38,8 @@ class Product < ApplicationRecord
   def image_urls
     images.map {|image| image.url}
   end
+
+  def category_names
+    categories.map {|category| category.name }
+  end
 end

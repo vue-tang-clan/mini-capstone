@@ -8,3 +8,5 @@ json.tax product.tax
 json.total product.total
 json.message "YO"
 json.supplier_name product.supplier.name
+json.categories product.categories
+json.category_names product.category_names
