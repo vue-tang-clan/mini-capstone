@@ -9,6 +9,11 @@ class ProductsController < ApplicationController
       @products = @products.where("name ILIKE ?", "%" + search_terms + "%")
     end
 
+    category_name = params[:category]
+    if category_name
+      @products = Category.find_by(name: category_name).products
+    end
+
     if params[:sort_by_price]
       @products = @products.order(price: :asc)
     else
