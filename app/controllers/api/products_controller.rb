@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+class Api::ProductsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
 
   def index
